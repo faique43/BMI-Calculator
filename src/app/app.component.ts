@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'BMIApp';
-}
+
+  public height!: number;
+  public weight!:number;
+  public bmi!:number;
+
+  bmiCal(){
+
+      this.bmi = (this.weight/(this.height * this.height)) * 703;
+      this.bmi = parseFloat(this.bmi.toFixed(1));
+    }
+  }
+
