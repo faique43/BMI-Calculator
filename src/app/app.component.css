@@ -2,9 +2,13 @@
   height: 500px;
   width: 500px;
 
-  background-color: #393E46;
   color: #F2E7D5;
   border-radius: 15px;
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 h1 {
@@ -45,12 +49,20 @@ input {
 }
 
 button {
-  background-color: #6D9886;
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
   border: none;
   padding: 15px;
 
   font-size: 18px;
   border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 h3 {
