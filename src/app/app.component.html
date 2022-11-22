@@ -1,11 +1,22 @@
-<div>
+<div class="container">
   <h1>
-    {{title}}
+    BMI Calculator
   </h1>
-  <label for="height">Enter Your Height in Inches: </label>
-  <input type="number" name="height" [(ngModel)]="height">
-  <label for="weight">Enter Your Weight in Pounds: </label>
-  <input type="number" name="weight" [(ngModel)]="weight">
-  <button (click)="bmiCal()">Calculate BMI</button>
+
+  <div class="input-container">
+    <label for="height">Enter Your Height in Inches: </label>
+    <input type="number" name="height" [(ngModel)]="height">
+  </div>
+
+  <div class="input-container">
+    <label for="weight">Enter Your Weight in Pounds: </label>
+    <input type="number" name="weight" [(ngModel)]="weight">
+  </div>
+
+  <div class="btn-container">
+    <button (click)="bmiCal()">Calculate BMI</button>
+  </div>
+
   <h3>Your BMI is: {{bmi}}</h3>
+  <p>{{comment}}</p>
 </div>
